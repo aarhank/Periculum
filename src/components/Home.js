@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './Main.css'
 import Chintu from './chintu'
 import {Link} from 'react-router-dom'

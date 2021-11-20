@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from "react";
-import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
 import { useLocation } from "react-router-dom";
 import Button from "react-bootstrap/Button";
