@@ -1,0 +1,218 @@
+.h_layout{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: flex-start;
+    margin: 5vw;
+}
+.h_intro{
+    display: flex;
+    flex-direction: column;
+  
+    gap:5vw;
+}
+.h_text{
+    color: white;
+    text-decoration: none;
+}
+.wierd{
+    color: white;
+ 
+    margin: 2vw;
+}
+
+
+.I-hate-text-decorations{
+    text-decoration: none;
+    color: white;
+}
+.I-hate-text-decorations:hover{
+    color: white;
+    text-decoration: none;
+}
+.torrents{
+    display:flex;
+    flex-direction:column;
+    margin-top:4vw;
+    align-self:center;
+    
+}
+.torrent{
+    display: flex;
+    flex-direction: row;
+    gap:3vw;
+    justify-content: space-between;
+    
+    background-color: #141414;
+    padding: 20px;
+    margin-top: 2vw;
+    border-radius: 10px;
+}
+.torrent2{
+    display: flex;
+    flex-direction: row;
+    gap:3vw
+}
+.torrent-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #141414;
+}
+.torrent-name{
+    width: 50%;
+    background-color: #141414;
+    color: grey;
+    
+}
+.torrent-magnet{
+    align-self: center;
+    background-color: #141414;
+
+}
+.torrent-leechers{
+    background-color: #141414;
+    color: grey;
+}
+.torrent-seeders{
+    background-color: #141414;
+    color: grey;
+}
+
+
+/*chintu Styling */
+*{
+    background-color: black;
+  }
+  .frankcont{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  .frank{
+      position: absolute;
+      bottom: 50px;
+      width: 110px;
+      height: 105px;
+      border-radius: 35%;
+      border: 3px solid white;
+      cursor: pointer;
+    transition: 1s;
+  }
+  
+  .leftEye{
+    height:30px;
+    width:30px;
+    border-bottom: 4px solid white;
+    position:absolute;
+    left: 15%;
+    top: 15%;
+    transition: 1s;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+  }
+  .rightEye{
+    height:30px;
+    width: 30px;
+    border-bottom: 4px solid white;
+    position: absolute;
+    right: 15%;
+    top: 15%; 
+    transition: 1s;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+  }
+  .mouth{
+    height:20px;
+    width: 50px;
+    border-radius:100%;
+    background:#FF6600;
+    border: 2px solid #FF6600;
+    border-bottom: 4px solid white;
+    position: absolute;
+    left: 24%;
+    top:64%; 
+  }
+  /*Panel Styling*/
+  .IntPanelLeft, .IntPanelRight{
+    display: none;
+    opacity: 0.5;
+    height: 100px;
+    width: 300px;
+  }
+  .IntPanelLeft{
+    float: left;
+  }
+  .IntPanelRight{
+    float: right;
+  }
+  .IntPanelRight.active{
+    display: flex;
+    transform: translate(-200px, 50px);
+  }
+  .IntPanelLeft.active{
+    display: flex;
+    transform: translate(200px, 50px);
+  }
+  li{
+    list-style-type: none;
+    border: 2px solid #0ff;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: #0ff;
+    margin: 20px;
+    cursor: pointer;
+    transition: 5s;
+    box-shadow: 0px 0px 40px 20px blue;
+  }
+  li > i{
+    background-color: #0ff;
+    padding-top: 15px;
+  }
+  /*Response Styling*/
+  .responsePanel{
+  
+  }
+  
+  
+  /*Frank actions*/
+  /*Not Active*/
+  .frank:not(.active):hover{
+   animation: awake 0.5s linear;
+    border: 3px solid yellow;
+    height: 115px;
+  }
+  .frank:not(.active):hover > .rightEye{
+    background: white;
+    border: 2px solid white;
+  }
+  .frank:not(.active):hover > .leftEye{
+    background: white;
+    border: 2px solid white;
+  }
+  /*Active*/
+  .frank.active{
+    background: blue;
+    border:3px solid blue;
+  }
+  .frank.active > .rightEye{
+    background-color: white;
+    border: 2px solid white;
+  }
+  .frank.active > .leftEye{
+    background-color: white;
+    border: 2px solid white;
+  }
+  
+  /*Animations*/
+  @keyframes awake{
+    20%{border: 3px solid yellow;}
+    40%{border:3px solid yellow; height: 107px; transform: rotate(3deg);}
+    60%{border:3px solid yellow; height: 109px; transform: rotate(-1deg);}
+    80%{border:3px solid yellow; height: 115px; transform: roatate(180deg);}
+    100%{border:3px solid yellow; height: 115px;}
+  }
