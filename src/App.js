@@ -26,7 +26,7 @@ const App = () => {
             <Home />
         </Route>
         <Route exact path="/home/about">
-          <h2 className="wierd">this is my personal porn collectional advised to stay away<br/>Beside that its a very powerfull torrent search engine</h2>
+          <h2 className="wierd">this is my personal porn collection advised to stay away<br/>Beside that its a very powerful torrent search engine</h2>
           <Chintu/>
         </Route>  
         <Route exact path="/home/wrongButton">
@@ -37,7 +37,7 @@ const App = () => {
           <h2 className="wierd">email - aarhankhan212@gmail.com</h2>
           <Chintu/>
         </Route>  
-        <Route exact path="/home/disclamer">
+        <Route exact path="/home/disclaimer">
           <h2 className="wierd">remember that this is just a search/indexing tool, your content is not hosted here.<br/> Please be polite. There is no point in threats.</h2>
           <Chintu/>
         </Route>  
