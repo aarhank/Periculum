@@ -4,13 +4,12 @@ import { useLocation } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import './Main.css'
 
-const localDomain = "http://localhost:5000";
 const Torrents = () => {
     const [torrents,setTorrents] = useState([]);
     const params = useLocation().search;
     useEffect(() => {
         const searchParams = new URLSearchParams(params);
-        fetch(`${localDomain}/search?` + searchParams.toString())
+        fetch(`https://periculum.herokuapp.com/search?` + searchParams.toString())
         .then(res => res.json())
         .then(res => {
             setTorrents(res)            
