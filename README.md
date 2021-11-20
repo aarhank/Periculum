@@ -10,9 +10,9 @@
   * Periculum files are simply metadata and cannot be copyrighted.
 
 ## About
-### This was made as an effort to reduce scams because we all now Torrent websites are filled with multiple trackers, and continuously logging your information.
+This was made as an effort to reduce scams because we all now Torrent websites are filled with multiple trackers which are continuously logging your information.
 
-### The torrent data is collected by an scraper API , which will be open sourced later , that API parse data from sites like katcr.to and 1337x. 
+The torrent data is collected by an scraper API , which will be open sourced later , that API parse data from sites like katcr.to and 1337x. 
 
 ![](2021-11-21-00-33-14.png)
 ![](2021-11-21-00-33-41.png)
