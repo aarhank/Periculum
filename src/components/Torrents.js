@@ -6,7 +6,8 @@ import './Main.css'
 
 const Torrents = () => {
     const [torrents,setTorrents] = useState([]);
-    const params = useLocation().search;
+    const [params,setParams] = useState(useLocation().search);
+    
     useEffect(() => {
         const searchParams = new URLSearchParams(params);
         fetch(`https://periculum.herokuapp.com/search?` + searchParams.toString())
@@ -23,6 +24,15 @@ const Torrents = () => {
                 <Form.Control type="search" name="search" placeholder="search the internet" />
                 <Button style={{ height: '39px', backgroundColor:'grey', border:'none',marginLeft:'10px' }} type="submit">Search</Button>
             </Form>
+            <div className="butttons">
+                <Button onClick={()=>setParams("?search=movies")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Movies</Button>
+                <Button onClick={()=>setParams("?search=tv")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>OTT series</Button>
+                <Button onClick={()=>setParams("?search=games")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Games</Button>
+                <Button onClick={()=>setParams("?search=anime")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Anime</Button>
+                <Button onClick={()=>setParams("?search=audio")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Audio</Button>
+                <Button onClick={()=>setParams("?search=apps")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Software</Button>
+                <Button onClick={()=>setParams("?search=xxx")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Dopa stuff(nsfw)</Button>
+            </div>
             <div className="torrents">
             {     
                 torrents.map((itr,i) => (

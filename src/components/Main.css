@@ -37,6 +37,14 @@
     align-self:center;
     
 }
+.butttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-self: center;
+  gap:2vw;
+}
 .torrent{
     display: flex;
     flex-direction: row;
