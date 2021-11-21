@@ -14,5 +14,7 @@ This was made as an effort to reduce scams because we all know Torrent websites 
 
 The torrent data is collected by an scraper API , which will be open sourced later , that API parse data from sites like katcr.to and 1337x. 
 
+New torrents are added everyday at 12am, the scraper is sheduled to be runned at that time. 
+
 ![](2021-11-21-00-33-14.png)
 ![](2021-11-21-00-33-41.png)
