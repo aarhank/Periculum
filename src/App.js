@@ -26,11 +26,11 @@ const App = () => {
             <Home />
         </Route>
         <Route exact path="/home/about">
-          <h2 className="wierd">this is my personal porn collection advised to stay away<br/>Beside that its a very powerful torrent search engine</h2>
+          <h2 className="wierd">its a very powerful torrent search engine</h2>
           <Chintu/>
         </Route>  
         <Route exact path="/home/wrongButton">
-          <h2 className="wierd">You might wanna click that wierd box at the bottom</h2>
+          <h2 className="wierd">you might wanna click that wierd box at the bottom</h2>
           <Chintu/>
         </Route> 
         <Route exact path="/home/feedback">
