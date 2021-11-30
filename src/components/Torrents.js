@@ -15,7 +15,7 @@ const Torrents = () => {
         .then(res => {
             setTorrents(res)            
         }).catch(err => console.error(err));
-    }, [torrents,params]);
+    }, [params]);
 
 
     return (
@@ -24,6 +24,7 @@ const Torrents = () => {
                 <Form.Control type="search" name="search" placeholder="search the internet" />
                 <Button style={{ height: '39px', backgroundColor:'grey', border:'none',marginLeft:'10px' }} type="submit">Search</Button>
             </Form>
+            <Form >
             <div className="butttons">
                 <Button onClick={()=>setParams("?search=movies")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Movies</Button>
                 <Button onClick={()=>setParams("?search=tv")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>OTT series</Button>
@@ -33,6 +34,7 @@ const Torrents = () => {
                 <Button onClick={()=>setParams("?search=apps")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Software</Button>
                 <Button onClick={()=>setParams("?search=xxx")} style={{backgroundColor:'black',border:'none',backgroundColor:'#141414'}}>Dopa stuff(nsfw)</Button>
             </div>
+            </Form>
             <div className="torrents">
             {     
                 torrents.map((itr,i) => (
